@@ -1,0 +1,18 @@
+mixin eventForm(event = {})
+		
+	form(action="/add" method="POST" class="card")
+		label(for="title") Title
+		input(type="text" name="title")
+		label(for="description") Description
+		textarea(name="description")
+		label(for="location") Location
+		input(type="text" name="location")
+		label(for="start") Start Date
+		input(type="date" name="start")
+		label(for="end") End Date
+		input(type="date" name="end")
+		label(for="quantity") Total Staff Needed
+		input(type="number" name="quanity")
+		label(for="travelID") Travel ID
+		input(type="text" name="travelID")
+		input(type="submit" value="Save" class="button")

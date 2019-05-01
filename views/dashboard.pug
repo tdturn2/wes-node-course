@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	.inner 
+		h2=title
+
+		.stores
+			table
+				tbody
+					each event in events
+						tr
+							td= event.title
+							td= event.start
+							td
+								a(href='/event/' + event.id + '/edit') Edit
+
+									
+						
